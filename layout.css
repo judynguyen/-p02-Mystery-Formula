@@ -41,30 +41,6 @@ h2
   width: 150px;
 }
 
-.home
-{
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  color: #9b8c92;
-  text-align: center;
-  font-size: 0;
-  position: fixed;
-  top: 10px;
-  left: 10px;
-  width:25px;
-  box-shadow:rgba(0,0,0,0.06)2px 2px;
-  border: 1px solid #dcdcdc;
-  border-radius: 100px;
-  background: #ffffff;
-  -webkit-transition: all 0.6s ease-in-out;
-}
-
-.home:hover
-{
-      font-size: 65%;
-      padding: 2px;
-      width: 50px;
-}
-
 .fixedimg
 {
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
@@ -95,24 +71,6 @@ h2
 {
   top: 190px; /* how do i horizaontally align to center?*/
   left: 15px;
-  box-shadow:rgba(0,0,0,0.06)6px 6px;
-  border: 1px solid #f9c6b0;
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  text-align: center;
-  font-size: 75%;
-  background: #ffffff;
-  padding: 10px;
-  position: relative;
-  color: #c4d0d5;
-  border-radius: 20px;
-  float: left;
-  width: 60%;
-}
-
-.blocky2
-{
-  top: 190px;
-  left: 230px;
   box-shadow:rgba(0,0,0,0.06)6px 6px;
   border: 1px solid #f9c6b0;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
