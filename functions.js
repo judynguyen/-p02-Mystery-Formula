@@ -1,5 +1,5 @@
 function saveUserDetails(){
-  var name = document.getElementById("input1").value;
+  var name = document.getElementById("username").value;
   setCookie("uName", name);
 }
 
