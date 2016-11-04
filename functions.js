@@ -1,4 +1,6 @@
+var cookieMade = false;
 var score = 0;
+
 function saveUserDetails(){
   var name = document.getElementById("username").value;
   var age = document.getElementById("age").value;
@@ -97,6 +99,7 @@ function replace(){
 adds the length of name + (name length + age) + birth month + sum of all previous numbers
 */
 function calculateCookie(){
+  var scoreGiven = false;
   var userInput = document.getElementById("a1").value;
   userInput = userInput.toString();
 
@@ -119,11 +122,14 @@ function calculateCookie(){
   finalCS = finalCS.toString();
   console.log("final cookie string: " + finalCS);
 
-  if(userInput == finalCS){
+  if(userInput == finalCS && scoreGiven==false){
+    if(cookieMade==false){
+      setCookie("scoreTotal", score);
+      cookieMade=true;
+    }
     score+=5;
-    setCookie("scoreTotal", score);
     alert("Correct! You earned 5 pts. \nYour total score is now " + getCookie("scoreTotal") + ".");
-
+    scoreGiven=true;
   }
   else{
     alert("Try again.");
@@ -134,14 +140,19 @@ function calculateCookie(){
 adds the length of name + (name length + age) + birth month + sum of all previous numbers
 */
 function calculateA2(){
+  var scoreGiven = false;
   var userInput = document.getElementById("a2").value;
   userInput = userInput.toString();
 
   var finalSum = 622230;
-  if(userInput == finalSum){
+  if(userInput == finalSum && scoreGiven==false){
+    if(cookieMade==false){
+      setCookie("scoreTotal", score);
+      cookieMade=true;
+    }
     score+=5;
-    setCookie("scoreTotal", score);
     alert("Correct! You earned 5 pts. \nYour total score is now " + getCookie("scoreTotal") + ".");
+    scoreGiven=true;
   }
   else{
     alert("Try again.");
@@ -152,20 +163,93 @@ function calculateA2(){
 adds the length of name + (name length + age) + birth month + sum of all previous numbers
 */
 function calculateA3(){
+  var scoreGiven = false;
   var userInput = document.getElementById("a3").value;
   userInput = userInput.toString();
 
   var finalSum = 2451259;
-  if(userInput == finalSum){
+  if(userInput == finalSum && scoreGiven==false){
+    if(cookieMade==false){
+      setCookie("scoreTotal", score);
+      cookieMade=true;
+    }
     score+=5;
-    setCookie("scoreTotal", score);
     alert("Correct! You earned 5 pts. \nYour total score is now " + getCookie("scoreTotal") + ".");
+    scoreGiven=true;
   }
   else{
     alert("Try again.");
   }
 }
 
+function calculateP1(){
+  var scoreGiven = false;
+  var userInput = document.getElementById("p1").value;
+  userInput = userInput.toString();
+  userInput = userInput.toUpperCase();
+
+  var finalAnswer = "PG5S";
+  finalAnswer = finalAnswer.toString();
+  console.log(scoreGiven);
+  if(userInput == finalAnswer && scoreGiven==false){
+    if(cookieMade==false){
+      setCookie("scoreTotal", score);
+      cookieMade=true;
+    }
+    score+=5;
+    alert("Correct! You earned 5 pts. \nYour total score is now " + getCookie("scoreTotal") + ".");
+    scoreGiven=true;
+  }
+  else{
+    alert("Try again.");
+  }
+}
+
+function calculateP2(){
+  var scoreGiven = false;
+  var userInput = document.getElementById("p2").value;
+  userInput = userInput.toString();
+  userInput = userInput.toUpperCase();
+
+  var finalAnswer = "RG6S";
+  finalAnswer = finalAnswer.toString();
+
+  if(userInput == finalAnswer && scoreGiven==false){
+    if(cookieMade==false){
+      setCookie("scoreTotal", score);
+      cookieMade=true;
+    }
+    score+=5;
+    alert("Correct! You earned 5 pts. \nYour total score is now " + getCookie("scoreTotal") + ".");
+    scoreGiven=true;
+  }
+  else{
+    alert("Try again.");
+  }
+}
+
+function calculateP3(){
+  var scoreGiven = false;
+  var userInput = document.getElementById("p3").value;
+  userInput = userInput.toString();
+  userInput = userInput.toUpperCase();
+
+  var finalAnswer = "YG4S";
+  finalAnswer = finalAnswer.toString();
+
+  if(userInput == finalAnswer && scoreGiven==false){
+    if(cookieMade==false){
+      setCookie("scoreTotal", score);
+      cookieMade=true;
+    }
+    score+=5;
+    alert("Correct! You earned 5 pts. \nYour total score is now " + getCookie("scoreTotal") + ".");
+    scoreGiven=true;
+  }
+  else{
+    alert("Try again.");
+  }
+}
 //courtesy of w3schools, from: http://www.w3schools.com/js/js_cookies.asp
 function setCookie(cname, cvalue, exdays) {
     var d = new Date();
