@@ -17,6 +17,11 @@ h2
   color: #b1e1e1;
 }
 
+h4
+{
+  color: #b1e1e1;
+}
+
 .credit
 {
   z-index: 1;
@@ -121,7 +126,7 @@ h2
     padding: 12px;
     position: relative;
     color: #808b96;
-    left: 55px; /*align to always be the same no matter content size*/
+    left: 67px; /*align to always be the same no matter content size*/
     width: 50%;
 }
 
