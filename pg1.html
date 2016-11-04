@@ -7,42 +7,61 @@
     <script type="text/javascript" src="functions.js"></script>
   </head>
 
-  <body lang="en-US">
+  <body onload="replace()" lang="en-US">
     <div style="width:100%">
       <div class="fixedimg">
         <img src="http://orig00.deviantart.net/7dd7/f/2016/263/4/7/chovie_by_mocchu-daid5al.gif" alt="anchovies">
-        <br><a href="pg2.html"><button class="submit" onclick="saveUserDetails()">submit</button></a>
+        <br><a href="pg2.html"><button class="submit" onclick="saveUserDetails()">next</button></a>
         <br><br>
       </div>
 
       <div class="selection1"><h2>Test 1</h2>
-        Hello and welcome to the first page of your intelligence test!
-        This test will be timed(maybe) and your total score will be displayed at the end.
-        <br>The break-up of your score consists of the time taken to complete the test and (of course) your overall score
-        on the questions.
-        <br>To start, follow the prompts in the neighboring boxes.
+        This will be your first test. Please take a look at these examples to help you figure out how to solve the problems
+        given to you.
+        <br>These examples are done with the inputs: name, age, and birth month.
+        <h4>EXAMPLE 1</h4>
+        Name: Bobby <br> Age: 15 <br> Birth month: February
+        <br>Answer: 520227
+        <h4>EXAMPLE 2</h4>
+        Name: Judy <br> Age: 21 <br> Birth month: October
+        <br>Answer: 4251039
+        <h4>EXAMPLE 3</h4>
+        Name: Tom <br> Age: 6 <br> Birth month: May
+        <br>Answer: 39517
+        <h4>EXAMPLE 4</h4>
+        Name: James <br> Age: 11 <br> Birth month: April
+        <br>Answer: 516425
+        <h4>EXAMPLE 5</h4>
+        Name: Trevor <br> Age: 30 <br> Birth month: January
+        <br>Answer: 636143
+
       </div>
 
       <div class="selection2">
         <form id="input1" action="form_action.asp">
           <br>
-          Please enter a name you would liked to be called by:<br>
-          <br><input type="text" name="username" value=""><br><br>
+          Name: <span id="nameA">name</span> || Age: <span id="ageA">age</span> || Birth month: <span id="monthA">month</span>
+          <br>
+          <br><input type="text" id="a1" value="" onchange="calculateCookie()"><br><br>
         </form>
       </div>
 
       <div class="selection3">
-        <form id="input2" action="form_action.asp">
-          First name: <input type="text" name="fname" value=""><br><br>
-          Last name: <input type="text" name="lname"><br><br>
+        <form id="input1" action="form_action.asp">
+          <br>
+          Name: Bobby || Age: 15 || Birth month: February
+          <br>
+          <br><input type="text" name="username" value=""><br><br>
         </form>
       </div>
 
         <div class="selection4">
-          <form id="input3" action="form_action.asp">
-          First name: <input type="text" name="fname" value=""><br><br>
-          Last name: <input type="text" name="lname" value=""><br><br>
-        </form>
+          <form id="input1" action="form_action.asp">
+            <br>
+            Name: Bobby || Age: 15 || Birth month: February
+            <br>
+            <br><input type="text" name="username" value=""><br><br>
+          </form>
       </div>
     </div>
     </div>
