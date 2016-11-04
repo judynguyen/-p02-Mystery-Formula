@@ -130,6 +130,42 @@ function calculateCookie(){
   }
 }
 
+/*
+adds the length of name + (name length + age) + birth month + sum of all previous numbers
+*/
+function calculateA2(){
+  var userInput = document.getElementById("a2").value;
+  userInput = userInput.toString();
+
+  var finalSum = 622230;
+  if(userInput == finalSum){
+    score+=5;
+    setCookie("scoreTotal", score);
+    alert("Correct! You earned 5 pts. \nYour total score is now " + getCookie("scoreTotal") + ".");
+  }
+  else{
+    alert("Try again.");
+  }
+}
+
+/*
+adds the length of name + (name length + age) + birth month + sum of all previous numbers
+*/
+function calculateA3(){
+  var userInput = document.getElementById("a3").value;
+  userInput = userInput.toString();
+
+  var finalSum = 2451259;
+  if(userInput == finalSum){
+    score+=5;
+    setCookie("scoreTotal", score);
+    alert("Correct! You earned 5 pts. \nYour total score is now " + getCookie("scoreTotal") + ".");
+  }
+  else{
+    alert("Try again.");
+  }
+}
+
 //courtesy of w3schools, from: http://www.w3schools.com/js/js_cookies.asp
 function setCookie(cname, cvalue, exdays) {
     var d = new Date();
