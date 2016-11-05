@@ -155,7 +155,7 @@ span.shown-message{
   padding: 12px;
   position: relative;
   color: #808b96;
-  left: 500px; /*align to always be the same no matter content size*/
+  left: 64px; /*align to always be the same no matter content size*/
   width: 50%;
 }
 
