@@ -22,6 +22,13 @@ h4
   color: #b1e1e1;
 }
 
+span.hidden-message{
+  opacity: 0.0;
+}
+span.shown-message{
+  opacity: 1.0;
+}
+
 .credit
 {
   z-index: 1;
@@ -126,7 +133,7 @@ h4
     padding: 12px;
     position: relative;
     color: #808b96;
-    left: 67px; /*align to always be the same no matter content size*/
+    left: 64px; /*align to always be the same no matter content size*/
     width: 50%;
 }
 
@@ -175,6 +182,28 @@ h4
 }
 
 .selection4:hover
+{
+  color: #c4d0d5;
+}
+
+.score
+{
+  display: inline-block;
+  top: 220px; /* align to always be the same no matter content size*/
+  box-shadow:rgba(0,0,0,0.06)6px 6px;
+  border: 1px solid #dcd3ca;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  text-align: center;
+  font-size: 75%;
+  background: #ffffff;
+  padding: 12px;
+  position: relative;
+  color: #808b96;
+  left: 320px; /*align to always be the same no matter content size*/
+  width: 50%;
+}
+
+.score:hover
 {
   color: #c4d0d5;
 }

@@ -23,18 +23,28 @@
         <br>
       </div>
 
-      <div class="selection2">
+      <div id="usernameGroup" class="selection2">
         <form id="input1" action="form_action.asp">
           <br>
           Please enter a name you would liked to be called by:<br>
-          <br><input id="username" type="text" value=""><br><br>
+          <br><input onchange="validateUser()" id="username" type="text" value=""><br><br>
+          <span id="usernameError" class="control-label hidden-message">
+            Error Placeholder (hidden)
+          </span>
         </form>
       </div>
 
       <div class="selection3">
         <form id="input2" action="form_action.asp">
-          Age: <br><input id="age" type="text" value=""><br><br>
-          Birth month: <br><input id="month" type="text" value=""><br><br>
+          Age: <br><input onchange="validateAge()" id="age" type="text" value=""><br><br>
+        <span id="ageError" class="control-label hidden-message">
+            Error Placeholder (hidden)
+          </span>
+          <br><br>
+          Birth month: <br><input onchange="validateMonth()" id="month" type="text" value=""><br><br>
+          <span id="monthError" class="control-label hidden-message">
+              Error Placeholder (hidden)
+            </span>
         </form>
       </div>
     </div>
