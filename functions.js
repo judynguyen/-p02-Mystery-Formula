@@ -1,3 +1,6 @@
+/*
+Author: Judy H. Nguyen
+*/
 var scoreGivenCC = false;
 var scoreGivenA2 = false;
 var scoreGivenA3 = false;
